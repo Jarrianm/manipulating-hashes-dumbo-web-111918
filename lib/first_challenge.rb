@@ -20,6 +20,8 @@ def first_challenge
             v.delete("strawberry")
           end
         end
+      end
+    end
   contacts
 end
 end
