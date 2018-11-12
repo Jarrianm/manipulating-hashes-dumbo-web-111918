@@ -14,10 +14,7 @@ def first_challenge
   }
 
   #your code here
-contacts["Freddy Mercury"].each do |k,v|
-  if k = :favorite_icecream_flavors
-    v.reject! do |flavour|
-      flavour == "strawberry"
+contacts["Freddy Mercury"][:favorite_ice_cream_flavors].shift
 end
 end
 end
