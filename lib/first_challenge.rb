@@ -13,7 +13,12 @@ def first_challenge
     }
   }
 
-contacts["Freddy Mercury"][:favorite_ice_cream_flavors].shift
-  #remember to return your newly altered contacts hash!
+  contacts.each do |name, data|
+      if name == "Freddy Mercury"
+        data.each do |k, v|
+          if k == :favorite_icecream_flavors
+            v.delete("strawberry")
+          end
+        end
   contacts
 end
